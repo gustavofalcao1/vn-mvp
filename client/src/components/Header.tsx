@@ -27,7 +27,13 @@ export default function Header() {
     <header className="fixed w-full top-4 z-50 px-4">
       <div className="max-w-7xl mx-auto">
         <nav className={`backdrop-blur ${scrolled ? 'bg-white/80' : 'bg-white/70'} rounded-full py-3 px-6 shadow-lg flex items-center justify-between transition-all duration-300`}>
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="flex items-center">
+            <a href="#" className="font-bold text-xl text-primary mr-8">
+              <span className="text-secondary">Consult</span>Pro
+            </a>
+          </div>
+          
+          <div className="hidden md:flex items-center justify-center space-x-6 absolute left-1/2 transform -translate-x-1/2">
             <a href="#quem-somos" className="text-neutral-800 hover:text-primary font-medium text-sm transition-colors">
               Quem Somos
             </a>
@@ -37,23 +43,15 @@ export default function Header() {
             <a href="#servicos" className="text-neutral-800 hover:text-primary font-medium text-sm transition-colors">
               Serviços
             </a>
-          </div>
-          
-          <div className="flex items-center justify-center md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
-            <a href="#" className="font-bold text-xl text-primary">
-              <span className="text-secondary">Consult</span>Pro
+            <a href="#parceiros" className="text-neutral-800 hover:text-primary font-medium text-sm transition-colors">
+              Parceiros
+            </a>
+            <a href="#estamos-aqui" className="text-neutral-800 hover:text-primary font-medium text-sm transition-colors">
+              Contacto
             </a>
           </div>
           
           <div className="flex items-center space-x-4">
-            <div className="hidden md:flex items-center space-x-6">
-              <a href="#parceiros" className="text-neutral-800 hover:text-primary font-medium text-sm transition-colors">
-                Parceiros
-              </a>
-              <a href="#estamos-aqui" className="text-neutral-800 hover:text-primary font-medium text-sm transition-colors">
-                Contacto
-              </a>
-            </div>
             <motion.a 
               href="#estamos-aqui" 
               className="bg-primary hover:bg-primary/90 text-white font-medium text-sm py-2 px-4 rounded-full transition-colors"
