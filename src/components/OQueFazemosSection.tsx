@@ -30,7 +30,7 @@ export default function OQueFazemosSection() {
           <motion.div 
             className="lg:w-[35%]"
             variants={{
-              hidden: { opacity: 0, x: -20 },
+              hidden: { opacity: 0, x: 0 },
               visible: { opacity: 1, x: 0 }
             }}
           >
