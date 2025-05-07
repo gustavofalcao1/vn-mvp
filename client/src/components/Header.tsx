@@ -28,12 +28,12 @@ export default function Header() {
       <div className="max-w-7xl mx-auto">
         <nav className={`backdrop-blur ${scrolled ? 'bg-white/80' : 'bg-white/70'} rounded-full py-3 px-6 shadow-lg flex items-center justify-between transition-all duration-300`}>
           <div className="flex items-center">
-            <a href="#" className="font-bold text-xl text-primary mr-8">
+            <a href="#" className="font-bold md:text-xl text-xs sm:text-[0.5rem] text-primary mr-8">
               <span className="text-secondary">me </span>VISTA NOVA
             </a>
           </div>
           
-          <div className="hidden md:flex items-center justify-center space-x-6 absolute left-1/2 transform -translate-x-1/2">
+          <div className="hidden lg:flex items-center justify-center space-x-6 absolute left-1/2 transform -translate-x-1/2">
             <a href="#quem-somos" className="text-neutral-800 hover:text-secondary font-medium text-md transition-colors">
               Quem Somos
             </a>
@@ -45,9 +45,6 @@ export default function Header() {
             </a>
             <a href="#parceiros" className="text-neutral-800 hover:text-secondary font-medium text-md transition-colors">
               Parceiros
-            </a>
-            <a href="#estamos-aqui" className="text-neutral-800 hover:text-secondary font-medium text-md transition-colors">
-              Contacto
             </a>
           </div>
           
@@ -61,7 +58,7 @@ export default function Header() {
               Fale Conosco
             </motion.a>
             <button 
-              className="md:hidden text-neutral-800" 
+              className="lg:hidden text-neutral-800" 
               aria-label="Menu"
               onClick={toggleMobileMenu}
             >
@@ -75,7 +72,7 @@ export default function Header() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <motion.div 
-            className="md:hidden mt-2 bg-white/95 backdrop-blur rounded-2xl shadow-lg p-4 absolute w-[calc(100%-2rem)] left-4 right-4"
+            className="lg:hidden mt-2 bg-white/95 backdrop-blur rounded-2xl shadow-lg p-4 absolute w-[calc(100%-2rem)] left-4 right-4"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
