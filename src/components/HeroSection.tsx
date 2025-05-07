@@ -40,7 +40,7 @@ export default function HeroSection() {
           </motion.div>
           
           <motion.div 
-            className="lg:w-1/2 relative"
+            className="lg:w-1/2 relative flex lg:block justify-center lg:justify-normal items-end lg:items-baseline"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -51,7 +51,7 @@ export default function HeroSection() {
               className="rounded-2xl shadow-2xl w-full object-cover"
             />
             <motion.div 
-              className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-lg"
+              className="absolute lg:-bottom-6 lg:-left-6 -bottom-6  bg-white rounded-2xl p-4 shadow-lg"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}

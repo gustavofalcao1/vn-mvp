@@ -37,7 +37,13 @@ export default function OQueFazemosSection() {
             <img 
               src="https://images.unsplash.com/photo-1615827133505-0eacaf28c33a?q=80&w=2454&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
               alt="Nossa equipe em ação" 
-              className="rounded-2xl shadow-lg w-full h-auto object-cover"
+              className="
+                rounded-2xl shadow-lg
+                lg:w-full
+                w-[500px]
+                h-[250px] object-cover         // default: corta e fixa a altura
+                lg:h-auto lg:object-contain    // em telas grandes, mostra natural
+              "
             />
           </motion.div>
           
