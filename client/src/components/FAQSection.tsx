@@ -14,7 +14,7 @@ export default function FAQSection({ faqs }: FAQSectionProps) {
   return (
     <section 
       id="faq" 
-      className="py-20 px-4 bg-neutral-100"
+      className="py-20 px-14 bg-neutral-100"
       ref={ref}
     >
       <motion.div

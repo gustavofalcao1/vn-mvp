@@ -15,93 +15,97 @@ import { apiRequest } from "@/lib/queryClient";
 
 const services: Service[] = [
   {
-    icon: "BarChart3",
-    title: "Consultoria Estratégica",
+    icon: "House",
+    title: "Crédito habitação",
     description: "Análise e planejamento para crescimento sustentável do seu negócio."
   },
   {
-    icon: "DollarSign",
-    title: "Gestão Financeira",
+    icon: "RefreshCw",
+    title: "Transferência de crédito",
     description: "Otimização de recursos e planejamento financeiro eficiente."
   },
   {
-    icon: "Users",
-    title: "Gestão de Equipes",
+    icon: "PiggyBank",
+    title: "Crédito pessoal",
     description: "Desenvolvimento de liderança e otimização de desempenho."
   },
   {
-    icon: "PieChart",
-    title: "Análise de Mercado",
+    icon: "Car",
+    title: "Crédito automóvel",
     description: "Pesquisa e identificação de oportunidades no seu setor."
   },
   {
-    icon: "Lightbulb",
-    title: "Inovação Empresarial",
+    icon: "HandCoins",
+    title: "Crédito consolidado",
     description: "Implementação de soluções inovadoras para o seu negócio."
   },
   {
-    icon: "MessageSquare",
-    title: "Marketing Estratégico",
+    icon: "HardHat",
+    title: "Crédito para obras",
     description: "Estratégias de comunicação e posicionamento de marca."
   },
   {
-    icon: "Briefcase",
-    title: "Gestão de Projetos",
+    icon: "Hammer",
+    title: "Autoconstrução",
     description: "Planejamento e execução eficiente de projetos empresariais."
   },
   {
-    icon: "Cpu",
-    title: "Transformação Digital",
+    icon: "MapPinned",
+    title: "Aquisição de terreno",
     description: "Implementação de tecnologias para modernizar seu negócio."
   },
   {
-    icon: "Shield",
-    title: "Compliance Empresarial",
+    icon: "CreditCard",
+    title: "Cartões de crédito",
     description: "Adequação às normas e regulamentações do seu setor."
   }
 ];
 
 const faqs: FAQ[] = [
   {
-    question: "Como funciona o processo de consultoria?",
-    answer: "O nosso processo de consultoria inicia-se com uma reunião de diagnóstico gratuita, onde identificamos as necessidades específicas da sua empresa. Em seguida, elaboramos uma proposta personalizada com as soluções mais adequadas. Após a aprovação, desenvolvemos um plano de ação detalhado e acompanhamos a implementação, garantindo resultados efetivos."
+    question: "Tenho de pagar pelo vosso serviço?",
+    answer: "Não. O nosso serviço é totalmente gratuito para ti. Atuamos segundo o artigo 46.º do Decreto-Lei 81-C/2017."
   },
   {
-    question: "Quais são os custos envolvidos?",
-    answer: "Os custos variam de acordo com as necessidades específicas de cada projeto e o escopo dos serviços contratados. Oferecemos diferentes modelos de contratação, desde projetos pontuais até acompanhamento contínuo. Após a reunião inicial gratuita, apresentamos uma proposta comercial detalhada e transparente, sem custos ocultos."
+    question: "A Vista Nova é um banco?",
+    answer: "Não. Somos uma empresa de intermediação de crédito, registada e autorizada pelo Banco de Portugal com o nº 2543."
   },
   {
-    question: "Quanto tempo dura o processo de consultoria?",
-    answer: "A duração depende da complexidade do projeto e dos objetivos estabelecidos. Projetos pontuais podem ser concluídos em algumas semanas, enquanto processos de transformação mais profundos podem estender-se por vários meses. Desenvolvemos um cronograma detalhado no início do projeto, com marcos claros e entregas definidas."
+    question: "Posso confiar nas propostas que me apresentam?",
+    answer: "Sim. A nossa missão é aconselhar de forma clara e isenta, com base no teu perfil e nos nossos 13 parceiros."
   },
   {
-    question: "Como são medidos os resultados?",
-    answer: "Definimos indicadores de desempenho (KPIs) específicos para cada projeto, alinhados aos objetivos do cliente. Realizamos avaliações periódicas para monitorar o progresso e fazer ajustes quando necessário. Ao final do projeto, apresentamos um relatório detalhado com os resultados alcançados, comparando com a situação inicial e os objetivos estabelecidos."
+    question: "Sou obrigado a aceitar a proposta que me apresentarem?",
+    answer: "Não. A decisão é sempre tua. A Vista Nova apresenta, compara e aconselha, mas nunca pressiona."
   },
   {
-    question: "Vocês atendem empresas de qualquer setor ou porte?",
-    answer: "Sim, trabalhamos com empresas de todos os portes, desde startups e pequenos negócios até grandes corporações. Nossa equipe conta com especialistas em diversos setores, permitindo-nos oferecer soluções adaptadas às especificidades de cada indústria e às necessidades particulares de cada negócio, independentemente do seu tamanho ou área de atuação."
+    question: "Ajudam mesmo depois da contratação do crédito?",
+    answer: "Sim. Fazemos acompanhamento pós-escritura. Estamos contigo até depois do contrato assinado."
+  },
+  {
+    question: "Com que bancos e instituições trabalham?",
+    answer: "Trabalhamos com 13 bancos e financeiras reconhecidas em Portugal. Podes ver todos na secção “Parceiros”."
   }
 ];
 
 const contacts: ContactPerson[] = [
   {
-    name: "Maria Silva",
-    role: "Consultora Sênior",
-    phone: "+351912345678",
-    email: "maria@consultpro.com"
+    name: "Jorge Veríssimo",
+    role: "Diretor",
+    phone: "+351965091853",
+    email: "jverissimo@vistanova.pt"
   },
   {
-    name: "João Santos",
-    role: "Diretor Comercial",
-    phone: "+351923456789",
-    email: "joao@consultpro.com"
+    name: "Ágatha Santos",
+    role: "Gestora Processual",
+    phone: "+351924967148",
+    email: "agathasantos@vistanova.pt"
   },
   {
-    name: "Ana Oliveira",
-    role: "Consultora Financeira",
-    phone: "+351934567890",
-    email: "ana@consultpro.com"
+    name: "Gabriela Almeida",
+    role: "Marketing",
+    phone: "+351999999999",
+    email: "gabriela@vistanova.pt"
   }
 ];
 
@@ -139,7 +143,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen overflow-x-hidden flex flex-col">
       <Header />
       
       <main>

@@ -9,7 +9,7 @@ export default function OQueFazemosSection() {
   return (
     <section 
       id="o-que-fazemos" 
-      className="py-20 px-4 bg-white"
+      className="py-20 px-14 bg-white"
       ref={ref}
     >
       <motion.div
@@ -28,21 +28,21 @@ export default function OQueFazemosSection() {
       >
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <motion.div 
-            className="lg:w-1/2"
+            className="lg:w-[35%]"
             variants={{
               hidden: { opacity: 0, x: -20 },
               visible: { opacity: 1, x: 0 }
             }}
           >
             <img 
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+              src="https://images.unsplash.com/photo-1615827133505-0eacaf28c33a?q=80&w=2454&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
               alt="Nossa equipe em ação" 
               className="rounded-2xl shadow-lg w-full h-auto object-cover"
             />
           </motion.div>
           
           <motion.div 
-            className="lg:w-1/2 space-y-8"
+            className="lg:w-[65%] space-y-8"
             variants={{
               hidden: { opacity: 0, x: 20 },
               visible: { opacity: 1, x: 0 }
@@ -65,7 +65,10 @@ export default function OQueFazemosSection() {
                 visible: { opacity: 1, y: 0 }
               }}
             >
-              Oferecemos consultoria especializada para empresas de todos os portes, desenvolvendo soluções personalizadas para cada desafio.
+              Comparamos, aconselhamos e negociamos por ti.<br />
+              Mas mais do que isso: acompanhamos-te em cada passo, desde o primeiro contacto até muito depois da escritura.<br />
+              O nosso compromisso é contigo!
+
             </motion.p>
             
             <motion.div 
@@ -91,8 +94,8 @@ export default function OQueFazemosSection() {
                   <span className="text-primary font-bold">01</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-primary">Análise</h3>
-                  <p className="mt-2 text-neutral-700">Diagnóstico detalhado do seu negócio, identificando pontos fortes e oportunidades de melhoria.</p>
+                  <h3 className="text-xl font-semibold text-primary">Não vendendemos crédito</h3>
+                  <p className="mt-2 text-neutral-700">O nosso trabalho não é vender crédito, é analisar o teu perfil financeiro, perceber a tua capacidade de endividamento, e encontrar, junto dos nossos parceiros bancários, a melhor solução para ti, adaptada às tuas necessidades e condições.</p>
                 </div>
               </motion.div>
               
@@ -107,8 +110,9 @@ export default function OQueFazemosSection() {
                   <span className="text-primary font-bold">02</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-primary">Aconselhamento</h3>
-                  <p className="mt-2 text-neutral-700">Elaboração de estratégias direcionadas para os objetivos específicos da sua empresa.</p>
+                  <h3 className="text-xl font-semibold text-primary">E sabe o melhor?</h3>
+                  <p className="mt-2 text-neutral-700">Todo este serviço, apoio e dedicação é totalmente gratuito para ti.<br />
+                  Sim, leste bem: não pagas nada.</p>
                 </div>
               </motion.div>
               
@@ -123,8 +127,8 @@ export default function OQueFazemosSection() {
                   <span className="text-primary font-bold">03</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-primary">Acompanhamento</h3>
-                  <p className="mt-2 text-neutral-700">Suporte contínuo durante a implementação das estratégias, garantindo resultados consistentes.</p>
+                  <h3 className="text-xl font-semibold text-primary">Como é possível?</h3>
+                  <p className="mt-2 text-neutral-700">Atuamos ao abrigo do artigo 46.º do Decreto-Lei n.º 81-C/2017, de 7 de julho, que define o regime jurídico dos intermediários de crédito.</p>
                 </div>
               </motion.div>
             </motion.div>
@@ -140,8 +144,8 @@ export default function OQueFazemosSection() {
               <div className="flex items-start gap-3">
                 <Zap className="h-6 w-6 text-secondary flex-shrink-0" />
                 <div>
-                  <h4 className="font-semibold">Primeira Consulta Gratuita</h4>
-                  <p className="text-sm text-neutral-700 mt-1">Oferecemos uma avaliação inicial sem compromisso para entender as necessidades do seu negócio.</p>
+                  <h4 className="font-semibold">Parece bom demais para ser verdade?</h4>
+                  <p className="text-sm text-neutral-700 mt-1">Nós chamamos-lhe… transparência.</p>
                 </div>
               </div>
             </motion.div>

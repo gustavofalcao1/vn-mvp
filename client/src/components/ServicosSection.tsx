@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Service } from "@/lib/types";
 import { 
-  BarChart3, DollarSign, Users, PieChart, 
-  Lightbulb, MessageSquare, Briefcase, Cpu, Shield 
+  House, RefreshCw, PiggyBank, Car, 
+  HandCoins, HardHat, Hammer, MapPinned, CreditCard 
 } from "lucide-react";
 
 interface ServicosSectionProps {
@@ -17,23 +17,23 @@ export default function ServicosSection({ services }: ServicosSectionProps) {
   const getIcon = (iconName: string) => {
     const props = { className: "h-6 w-6 text-primary" };
     switch (iconName) {
-      case "BarChart3": return <BarChart3 {...props} />;
-      case "DollarSign": return <DollarSign {...props} />;
-      case "Users": return <Users {...props} />;
-      case "PieChart": return <PieChart {...props} />;
-      case "Lightbulb": return <Lightbulb {...props} />;
-      case "MessageSquare": return <MessageSquare {...props} />;
-      case "Briefcase": return <Briefcase {...props} />;
-      case "Cpu": return <Cpu {...props} />;
-      case "Shield": return <Shield {...props} />;
-      default: return <Briefcase {...props} />;
+      case "House": return <House {...props} />;
+      case "RefreshCw": return <RefreshCw {...props} />;
+      case "PiggyBank": return <PiggyBank {...props} />;
+      case "Car": return <Car {...props} />;
+      case "HandCoins": return <HandCoins {...props} />;
+      case "HardHat": return <HardHat {...props} />;
+      case "Hammer": return <Hammer {...props} />;
+      case "MapPinned": return <MapPinned {...props} />;
+      case "CreditCard": return <CreditCard {...props} />;
+      default: return <PiggyBank {...props} />;
     }
   };
 
   return (
     <section 
       id="servicos" 
-      className="py-20 px-4 bg-neutral-100"
+      className="py-20 px-14 bg-neutral-100"
       ref={ref}
     >
       <motion.div

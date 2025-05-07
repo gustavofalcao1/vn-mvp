@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { ContactPerson, NewsletterSubscription } from "@/lib/types";
-import { Phone, Mail, MessageSquare, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 interface EstamosAquiSectionProps {
@@ -79,7 +79,7 @@ export default function EstamosAquiSection({ contacts, onNewsletterSubmit }: Est
   return (
     <section 
       id="estamos-aqui" 
-      className="py-20 px-4 bg-white"
+      className="py-20 px-14 bg-white"
       ref={ref}
     >
       <motion.div
@@ -160,13 +160,6 @@ export default function EstamosAquiSection({ contacts, onNewsletterSubmit }: Est
                 >
                   <Mail className="h-5 w-5" />
                 </a>
-                <a 
-                  href="#" 
-                  className="text-primary hover:text-secondary transition-colors"
-                  aria-label="Chat"
-                >
-                  <MessageSquare className="h-5 w-5" />
-                </a>
               </div>
             </motion.div>
           ))}
@@ -174,15 +167,23 @@ export default function EstamosAquiSection({ contacts, onNewsletterSubmit }: Est
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <motion.div 
-            className="bg-neutral-100 rounded-xl overflow-hidden h-80"
+            className="bg-neutral-100 rounded-xl overflow-hidden h-140"
             variants={{
               hidden: { opacity: 0, x: -20 },
               visible: { opacity: 1, x: 0 }
             }}
           >
             <div className="w-full h-full flex items-center justify-center bg-neutral-200 relative">
-              <MapPin className="h-12 w-12 text-primary absolute" />
-              <span className="text-neutral-600 font-medium">MAPA INTERATIVO</span>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.3985590261436!2d-8.634811924249076!3d41.12582461217906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd246526038471eb%3A0xbcc6fd0cdae10b46!2sMaxfinance%20Nova!5e0!3m2!1sen!2spt!4v1746209444412!5m2!1sen!2spt"
+                width="600"
+                height="800"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                style={{ border: 0 }}
+                className="w-full h-[550px] rounded-xl shadow-lg"
+              />
             </div>
           </motion.div>
           
@@ -235,7 +236,7 @@ export default function EstamosAquiSection({ contacts, onNewsletterSubmit }: Est
                   required
                 />
                 <label htmlFor="consent" className="ml-2 block text-sm text-neutral-700">
-                  Concordo em receber comunicações da ConsultPro conforme a Política de Privacidade.
+                  Concordo em receber comunicações da VISTA NOVA conforme a Política de Privacidade.
                 </label>
               </div>
               <motion.button 

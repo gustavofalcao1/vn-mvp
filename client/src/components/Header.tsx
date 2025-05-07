@@ -29,24 +29,24 @@ export default function Header() {
         <nav className={`backdrop-blur ${scrolled ? 'bg-white/80' : 'bg-white/70'} rounded-full py-3 px-6 shadow-lg flex items-center justify-between transition-all duration-300`}>
           <div className="flex items-center">
             <a href="#" className="font-bold text-xl text-primary mr-8">
-              <span className="text-secondary">Consult</span>Pro
+              <span className="text-secondary">me </span>VISTA NOVA
             </a>
           </div>
           
           <div className="hidden md:flex items-center justify-center space-x-6 absolute left-1/2 transform -translate-x-1/2">
-            <a href="#quem-somos" className="text-neutral-800 hover:text-primary font-medium text-sm transition-colors">
+            <a href="#quem-somos" className="text-neutral-800 hover:text-secondary font-medium text-md transition-colors">
               Quem Somos
             </a>
-            <a href="#o-que-fazemos" className="text-neutral-800 hover:text-primary font-medium text-sm transition-colors">
+            <a href="#o-que-fazemos" className="text-neutral-800 hover:text-secondary font-medium text-md transition-colors">
               O Que Fazemos
             </a>
-            <a href="#servicos" className="text-neutral-800 hover:text-primary font-medium text-sm transition-colors">
+            <a href="#servicos" className="text-neutral-800 hover:text-secondary font-medium text-md transition-colors">
               Serviços
             </a>
-            <a href="#parceiros" className="text-neutral-800 hover:text-primary font-medium text-sm transition-colors">
+            <a href="#parceiros" className="text-neutral-800 hover:text-secondary font-medium text-md transition-colors">
               Parceiros
             </a>
-            <a href="#estamos-aqui" className="text-neutral-800 hover:text-primary font-medium text-sm transition-colors">
+            <a href="#estamos-aqui" className="text-neutral-800 hover:text-secondary font-medium text-md transition-colors">
               Contacto
             </a>
           </div>
@@ -54,7 +54,7 @@ export default function Header() {
           <div className="flex items-center space-x-4">
             <motion.a 
               href="#estamos-aqui" 
-              className="bg-primary hover:bg-primary/90 text-white font-medium text-sm py-2 px-4 rounded-full transition-colors"
+              className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-sm py-2 px-4 rounded-full transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

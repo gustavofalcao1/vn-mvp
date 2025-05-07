@@ -16,7 +16,7 @@ export default function ProtocolosSection({ protocols }: ProtocolosSectionProps)
   return (
     <section 
       id="protocolos" 
-      className="py-16 px-4 bg-neutral-100 overflow-hidden"
+      className="py-16 px-0 bg-neutral-100 overflow-hidden"
       ref={ref}
     >
       <motion.div

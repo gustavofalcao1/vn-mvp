@@ -13,7 +13,7 @@ export default function ParceirosSection({ partners }: ParceirosSectionProps) {
   return (
     <section 
       id="parceiros" 
-      className="py-20 px-4 bg-white"
+      className="py-20 px-14 bg-white"
       ref={ref}
     >
       <motion.div

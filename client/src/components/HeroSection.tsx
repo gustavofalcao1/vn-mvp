@@ -13,11 +13,11 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Consultoria empresarial<br />
-              <span className="text-secondary">para o seu sucesso</span>
+              Especialista em<br />
+              <span className="text-secondary">Intermediação de Crédito</span>
             </h1>
-            <p className="text-lg text-white/80 max-w-lg">
-              Ajudamos o seu negócio a crescer com estratégias personalizadas, análises profundas e acompanhamento constante.
+            <p className="text-lg text-white/80 max-w">
+              Ajudamos a decidir de maneira estratégica, e tornar a literacia financeira um conhecimento acessível, não um privilégio de alguns.
             </p>
             <div className="flex flex-wrap gap-4">
               <motion.a 
@@ -34,7 +34,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Agende uma Consulta
+                Agende uma Conversa
               </motion.a>
             </div>
           </motion.div>
@@ -47,7 +47,7 @@ export default function HeroSection() {
           >
             <img 
               src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-              alt="Profissionais em consultoria" 
+              alt="Especialista em Intermediação de Crédito" 
               className="rounded-2xl shadow-2xl w-full object-cover"
             />
             <motion.div 

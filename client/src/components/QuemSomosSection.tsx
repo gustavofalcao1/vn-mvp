@@ -10,7 +10,7 @@ export default function QuemSomosSection() {
   return (
     <section 
       id="quem-somos" 
-      className="py-20 px-4"
+      className="py-20 px-14 bg-neutral-100"
       ref={ref}
     >
       <motion.div
@@ -46,8 +46,11 @@ export default function QuemSomosSection() {
             visible: { opacity: 1, y: 0 }
           }}
         >
+          <p className="text-lg text-neutral-800 text-center mb-2">
+            Somos a Vista Nova, uma empresa de Intermediação de Crédito, registada no Banco de Portugal com o n.º 2543, e com 15 anos de experiência.
+          </p>
           <p className="text-lg text-neutral-800 text-center mb-12">
-            Somos uma consultoria de referência no mercado, focada em resultados tangíveis para os nossos clientes através de metodologias ágeis e inovadoras.
+            Ajudamos os nossos clientes a decidirem melhor.
           </p>
 
           <Accordion type="single" collapsible className="space-y-4">
@@ -63,7 +66,8 @@ export default function QuemSomosSection() {
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 border-t border-neutral-100">
                   <p className="py-4">
-                    Potencializar o crescimento sustentável dos nossos clientes, proporcionando soluções personalizadas que transformam desafios em oportunidades e garantem resultados consistentes.
+                    A nossa missão é com os nossos clientes:
+                    garantir que contratem e gerem o seu crédito de forma consciente, com apoio em cada passo, acesso a informações claras e literacia financeira que transforma decisões e vidas.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -81,7 +85,8 @@ export default function QuemSomosSection() {
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 border-t border-neutral-100">
                   <p className="py-4">
-                    Ser reconhecida como a consultoria de referência em inovação e excelência, liderando o mercado com soluções que antecipam tendências e criam valor duradouro para os nossos clientes.
+                    Queremos que cada cliente veja o crédito como um recurso consciente, e não como um problema.<br /> 
+                    E queremos que o mercado olhe para a intermediação de crédito com mais exigência, mais transparência e mais impacto real.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -101,15 +106,23 @@ export default function QuemSomosSection() {
                   <ul className="py-4 space-y-2">
                     <li className="flex items-start gap-2">
                       <Check size={20} className="text-secondary flex-shrink-0 mt-0.5" />
-                      <span><strong>Integridade:</strong> Atuamos com transparência e ética em todas as nossas relações.</span>
+                      <span><strong>Ética:</strong> Algum texto</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check size={20} className="text-secondary flex-shrink-0 mt-0.5" />
-                      <span><strong>Inovação:</strong> Buscamos constantemente novas soluções e abordagens para os desafios dos nossos clientes.</span>
+                      <span><strong>Clareza:</strong> Algum texto</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check size={20} className="text-secondary flex-shrink-0 mt-0.5" />
-                      <span><strong>Excelência:</strong> Comprometemo-nos com a qualidade superior em todos os serviços prestados.</span>
+                      <span><strong>Proximidade:</strong> Algum texto</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={20} className="text-secondary flex-shrink-0 mt-0.5" />
+                      <span><strong>Compromisso:</strong> Algum texto</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={20} className="text-secondary flex-shrink-0 mt-0.5" />
+                      <span><strong>Formação:</strong> Algum texto</span>
                     </li>
                   </ul>
                 </AccordionContent>

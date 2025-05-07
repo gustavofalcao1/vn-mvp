@@ -8,10 +8,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <h3 className="font-bold text-xl mb-4">
-              <span className="text-secondary">Consult</span>Pro
+              <span className="text-secondary">me </span>VISTA NOVA
             </h3>
             <p className="text-white/80 mb-4">
-              Soluções empresariais personalizadas para o crescimento do seu negócio.
+              Especialista em Intermediação de Crédito.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-secondary transition-colors" aria-label="Facebook">
@@ -52,23 +52,22 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
                 <MapPin className="h-5 w-5 flex-shrink-0 text-secondary" />
-                <span className="text-white/80">Av. da Liberdade, 110<br />1269-044 Lisboa</span>
+                <span className="text-white/80">Rua da Bélgica, 113434–H<br />4400-209 Vila Nova de Gaia</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-5 w-5 flex-shrink-0 text-secondary" />
-                <span className="text-white/80">+351 210 123 456</span>
+                <span className="text-white/80">+351 22 375 06 02</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5 flex-shrink-0 text-secondary" />
-                <span className="text-white/80">info@consultpro.com</span>
+                <span className="text-white/80">info@vistanova.pt</span>
               </li>
             </ul>
           </div>
         </div>
         
         <div className="pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/60 text-sm mb-4 md:mb-0">&copy; {new Date().getFullYear()} ConsultPro. Todos os direitos reservados.</p>
-          <p className="text-white/60 text-sm">Desenvolvido com ❤️ por NextLevel Design</p>
+          <p className="text-white/60 text-sm mb-4 md:mb-0">&copy; {new Date().getFullYear()} VISTA NOVA. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
